@@ -1,4 +1,5 @@
 # TASK 1: Base your image on the ubuntu:bionic image
+FROM ubuntu:bionic
 
 # I've provided the commands to install all the binaries here
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y update \
