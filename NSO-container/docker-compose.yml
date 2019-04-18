@@ -1,0 +1,16 @@
+version: "3.5"
+services:
+  nso:
+    image: devnet-create-2019-nso-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "127.0.0.1:8080:8080"
+      - "127.0.0.1:10022:10022"  
+      - "127.0.0.1:12022:12022"
+      - "127.0.0.1:830:830"
+      - "127.0.0.1:2022:2022"
+      - "127.0.0.1:2023:2023"
+      - "127.0.0.1:4569:4569"
+    entrypoint: /bin/bash

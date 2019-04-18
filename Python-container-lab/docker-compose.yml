@@ -1,0 +1,11 @@
+version: "3.5"
+
+services:
+# TASK 5: Create a service for your automation. 
+#         It should call 'sh -c "cd /home/python && python3 -u restconf-test.py"' when run.
+
+# TASK 6: Create an IP network called "my-network" for this container to use using a network
+#         from the Carrier-grade NAT space (e.g. 100.64.99.0/24).
+#         Be sure to reference this network in your service above.
+
+# Extra credit TASK 7: Write the output of the script to a file on your host
