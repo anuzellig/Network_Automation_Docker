@@ -3,6 +3,15 @@ version: "3.5"
 services:
 # TASK 5: Create a service for your automation. 
 #         It should call 'sh -c "cd /home/python && python3 -u restconf-test.py"' when run.
+services:
+  python:
+    image: devnet-create-2019-python
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - my-network
+    command: sh -c "cd /home/python && python3 -u restconf-test.py"
 
 # TASK 6: Create an IP network called "my-network" for this container to use using a network
 #         from the Carrier-grade NAT space (e.g. 100.64.99.0/24).
