@@ -12,6 +12,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y update \
 RUN mkdir /home/python
 
 # TASK 2: Make the /home/python directory we just created the new default directory for commands
+WORKDIR /home/python
 
 # TASK 3: Copy requirements.txt into the container, and issue 'pip3 install -r requirements.txt'
 
