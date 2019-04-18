@@ -15,6 +15,8 @@ RUN mkdir /home/python
 WORKDIR /home/python
 
 # TASK 3: Copy requirements.txt into the container, and issue 'pip3 install -r requirements.txt'
+COPY requirements.txt ./
+RUN pip3 install -r requirements.txt
 
 # TASK 4: Copy the python script into the container
 
