@@ -16,5 +16,12 @@ services:
 # TASK 6: Create an IP network called "my-network" for this container to use using a network
 #         from the Carrier-grade NAT space (e.g. 100.64.99.0/24).
 #         Be sure to reference this network in your service above.
+networks:
+  my-network:
+    name: my-network
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 100.64.0.0/24
 
 # Extra credit TASK 7: Write the output of the script to a file on your host
