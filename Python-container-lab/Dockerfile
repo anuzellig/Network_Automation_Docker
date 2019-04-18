@@ -19,5 +19,6 @@ COPY requirements.txt ./
 RUN pip3 install -r requirements.txt
 
 # TASK 4: Copy the python script into the container
+COPY restconf-test.py ./
 
 # Question: Why are we breaking tasks 2 and 3 into seperate commands rather than a single command? What are the pros and cons of this approach? 
